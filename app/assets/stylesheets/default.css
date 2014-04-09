@@ -1,0 +1,50 @@
+table {
+	border-spacing: 2px;
+	border-color : gray;
+
+
+}
+
+#r-corner{
+	font-family: "Lucida sans Unicode", "Lucida Grande", "Sans-Serif";
+	font-size: 12px;
+	margin : 45 ;
+	width : 500;
+	text-align: left;
+	border-collapse: collapse;
+
+}
+
+thead {
+	display: table-header-group;
+	vertical-align: middle;
+	border-color: inherit;
+
+}
+#r-corner thead {
+	background: #69c9fe
+}
+tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+
+}
+#r-corner th{
+	padding: 8px ;
+	font-weight : normal;
+	font-size: 13px;
+	color :#039;
+}
+tbody{
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+
+}
+#r-corner td{
+	padding: 8px;
+	background: #e8edff;
+	border-top: 1px solid #fff;
+	color:#669;
+}

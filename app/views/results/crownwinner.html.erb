@@ -1,0 +1,24 @@
+<%= link_to("Go Back",{:action => 'index'}) %><br><br>
+
+<h2> Crown Winner </h2>
+<table id="r-corner">
+	<thead>
+		<tr>
+			<th>Player First - Last Name</th>
+			<th>hits</th>
+			<th>bats</th>
+			<th>rbi</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @crownwinner.each do |row| %>
+			<tr>
+				<td><%= "#{Player.find(row['player_id']).namefirst} - #{Player.find(row['player_id']).namelast}" %></td>
+				<td><%= row['hits'] %></td>
+				<td><%= row['bats']  %></td>
+				<td><%= row['rbi']  %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+

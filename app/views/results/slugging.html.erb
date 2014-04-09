@@ -1,0 +1,23 @@
+<%= link_to("Go Back",{:action => 'index'}) %><br><br>
+
+<h4>Sluggin Percentabe ((hits - 2d - 3t - hr) + (2 * 2d) + (3 * 3t) + (4 * hr) / bats Where teamid = 'OAK' and yearid = 2007 </h4>
+
+
+<table id="r-corner">
+	<thead>
+		<tr>
+			<th>Player First Name</th>
+			<th>Player Last Name</th>
+			<th>Slugging %</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @slugging.each do |row| %>
+			<tr>
+				<td><%= row['namefirst'] %></td>
+				<td><%= row['namelast'] %></td>
+				<td><%= "#{ row['bats'] > 0  ? ((( (row['hits'] - row['doubles'] - row['triples']- row['hr']) + (2 * row['doubles']) + (3 * row['triples'])+ (4 * row['hr'])).to_f / row['bats'] ) * 100).ceil : 0}"  %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

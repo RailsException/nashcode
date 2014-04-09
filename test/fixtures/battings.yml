@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  player_id: MyString
+  yearid: 1
+  league: MyString
+  teamid: MyString
+  games: 1
+  bats: 1
+  runs: 1
+  doubles: 1
+  triples: 1
+  hr: 1
+  rbi: 1
+  sb: 1
+  cs: 1
+
+two:
+  player_id: MyString
+  yearid: 1
+  league: MyString
+  teamid: MyString
+  games: 1
+  bats: 1
+  runs: 1
+  doubles: 1
+  triples: 1
+  hr: 1
+  rbi: 1
+  sb: 1
+  cs: 1

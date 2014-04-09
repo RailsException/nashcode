@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  playerid: MyString
+  namefirst: MyString
+  namelast: MyString
+  birthyear: 1
+
+two:
+  playerid: MyString
+  namefirst: MyString
+  namelast: MyString
+  birthyear: 1
